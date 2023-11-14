@@ -1,10 +1,15 @@
-let header = document.querySelector(".header");
+const header = document.querySelector(".header");
 const navbar = document.querySelector(".navbar");
 const hamburgerButton = document.querySelector('#menu');
+
+
 
 window.addEventListener('scroll', function(){
     header.classList.toggle('active', window.scrollY > 0);
 })
+
+
+
 // Header Show Up End
 
 // Menu
@@ -15,6 +20,15 @@ hamburgerButton.addEventListener('click', function(){
 
 
 // Header-End
+
+// Home Reveal 
+const homeReveal = document.querySelector('.home-section');
+const sliderReveal = document.querySelector('.slider-section');
+
+setTimeout(() => {
+    homeReveal.classList.add('home-reveal');
+    sliderReveal.classList.add('slider-reveal');
+}, 700)
 
 
 // Slider
@@ -37,7 +51,7 @@ setTimeout(function utilityReveal(){
     utilityOne.classList.add('utility-active1');
     utilitySecond.classList.add('utility-active2');
     utilityThird.classList.add('utility-active3');
-}, 500);
+}, 700);
 
 window.addEventListener('scroll', function(){
     if(this.window.scrollY > 200 ){
@@ -94,11 +108,11 @@ let mapsImg5 = document.querySelector('.maps-card-5');
 
 
 window.addEventListener('scroll', function(){
-    mapsImg1.classList.toggle('maps-card-active-1', window.scrollY > 1800);
-    mapsImg2.classList.toggle('maps-card-active-2', window.scrollY > 1800);
-    mapsImg3.classList.toggle('maps-card-active-3', window.scrollY > 1800);
-    mapsImg4.classList.toggle('maps-card-active-4', window.scrollY > 1800);
-    mapsImg5.classList.toggle('maps-card-active-5', window.scrollY > 1800);
+    mapsImg1.classList.toggle('maps-card-active-1', window.scrollY > 2000);
+    mapsImg2.classList.toggle('maps-card-active-2', window.scrollY > 2000);
+    mapsImg3.classList.toggle('maps-card-active-3', window.scrollY > 2000);
+    mapsImg4.classList.toggle('maps-card-active-4', window.scrollY > 2000);
+    mapsImg5.classList.toggle('maps-card-active-5', window.scrollY > 2000);
 });
 // Maps
 
