@@ -1557,9 +1557,7 @@ main {
         margin-top: 30px;
     }
 
-    .find-us-wrapper {
-        
-    }
+
 
     .maps-indo {
         width: 95%;
@@ -1701,14 +1699,6 @@ main {
     }
 
     /* FindUs */
-    .find-us {
-
-    }
-
-    .find-us-wrapper {
-        
-    }
-
     .maps-indo {
         width: 95%;
     }
@@ -1902,10 +1892,6 @@ main {
         width: 100vw;
     }
 
-    .about-us-wrapper {
-        
-    }
-
     .about-us-desc-1 {
         width: 350px;
         height: 400px;
@@ -1981,7 +1967,7 @@ main {
     #product {
         padding-top: 280px;
     }
-    
+
     /* Product Mobile End */
 }
 /* Mobile End */
