@@ -1570,12 +1570,12 @@ main {
         font-size: 80%;
     }
     .header {
-        width: 100%;
+        width: 100vw;
         justify-content: space-between;
         
     }
     header {
-        width: 100%;
+        width: 100vw;
         position: fixed;
     }
 
