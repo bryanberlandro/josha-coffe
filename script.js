@@ -4,8 +4,9 @@ const hamburgerButton = document.querySelector('#menu');
 
 
 
+
 window.addEventListener('scroll', function(){
-    header.classList.toggle('active', window.scrollY > 0);
+    header.classList.toggle('header-active', window.scrollY > 0);
 })
 
 
@@ -14,7 +15,7 @@ window.addEventListener('scroll', function(){
 
 // Menu
 hamburgerButton.addEventListener('click', function(){
-    navbar.classList.toggle('reveal');
+    navbar.classList.toggle('navbar-reveal');
 });
 // Menu
 
@@ -114,6 +115,44 @@ window.addEventListener('scroll', function(){
     mapsImg4.classList.toggle('maps-card-active-4', window.scrollY > 2000);
     mapsImg5.classList.toggle('maps-card-active-5', window.scrollY > 2000);
 });
+
+let [cust, satisfy, rate, rates] = [0, 0, 0, 0];
+let customers = document.querySelector('#customers');
+let satisfication = document.querySelector('#satisfication');
+let rating = document.querySelector('#rating');
+
+function glassyCardMethod(){
+    function customersMethod(){
+        cust < 74 ? cust += 1 : cust;
+        customers.innerHTML = `${cust}K +`
+    }
+    setInterval(()=> {
+        customersMethod();
+    }, 200)
+
+    function satisficationMethod(){
+        satisfy < 89 ? satisfy += 1 : satisfy;
+        satisfication.innerHTML = `${satisfy} %`
+    }
+    setInterval(()=> {
+        satisficationMethod();
+    }, 300)
+
+    function ratingMethod(){
+        rate < 4 ? rate += 1 : rate;
+        rates < 84 ? rates += 1 : rates;
+        rating.innerHTML = `${rate}.${rates}`
+    }
+    setInterval(()=> {
+        ratingMethod();
+    }, 500)
+}
+
+window.addEventListener('scroll', function(){
+    if(this.window.scrollY > 2000){
+        glassyCardMethod();
+    }
+})
 // Maps
 
 // Show Up
