@@ -1168,7 +1168,9 @@ main {
     transform: translateY(16px);
 }
 
-
+#ourTeamMobile {
+    display: none;
+}
 
 
 
@@ -1966,10 +1968,274 @@ main {
 
     /* Product Mobile */
     #product {
-        padding-top: 280px;
+        width: 100vw;
+        margin-top: 280px;
+        height: 128vh;
+        padding-top: 30px;
     }
 
+
+    .featured-menu-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        padding-top: 30px;
+    }
+    .featured-card-1 {
+        width: 310px;
+        margin-top: 20px;
+    }
+    .featured-img-1{
+        width: 70%;
+        transform: none;
+        left: -70px;
+        top: -40px;
+    }
+/* Featured Img 2 */
+    .featured-card-2 {
+        margin-top: 20px;
+        width: 310px;
+    }
+    .featured-img-2{
+        width: 60%;
+        transform: none;
+        left: -60px;
+        top: -80px;
+    }
+    /* Featured Img 3 */
+    .featured-card-3 {
+        margin-top: 20px;
+        width: 310px;
+    }
+    .featured-img-3{
+        width: 40%;
+        transform: none;
+        left: -30px;
+        top: -30px;
+    }
+
+    .get-product-wrapper {
+        transform: translateY(30px);
+        align-items: center;
+    }
+    .get-product {
+        width: 347px;
+        height: 80px;
+        gap: 20px;
+        justify-content: center;
+        align-items: center ;
+        margin-top: 20px;
+    }
+
+    .get-product-img img {
+        filter: none;
+    }
+
+    .find-us {
+        display: none;
+    }
     /* Product Mobile End */
+
+    /* OurTeam Mobile */
+    #ourTeam {
+        display: none;
+    }
+    #ourTeamMobile {
+        width: 100vw;
+        height: 200vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem 5%;
+        box-sizing: border-box;
+        text-align: center;
+        overflow: hidden;
+        position: relative;
+        gap: 30px;
+        flex-direction: column;
+    }
+    #ourTeamMobile {
+        display: flex;
+        align-items: center;
+    }
+    #ourTeamMobile h1 {
+        color: #313131;
+    }
+    #ourTeamMobile p {
+        letter-spacing: 5px;
+        font-size: 13px;
+        color: #715a4f;
+    }
+
+    .containerMobile {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+        width: 100vw;
+        height: 400px;
+        transition: all 400ms;
+    }
+
+    .boxMobile {
+        position: relative;
+        background: var(--img) center center;
+        background-size: cover;
+        transition: all 400ms;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .boxMobile::after{
+        content: attr(data-text);
+        position: absolute;
+        bottom: 20px;
+        background: #000;
+        color: #fff;
+        padding: 10px 10px 10px 14px;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        transform: translateY(60px);
+        opacity: 0;
+        transition: all 400ms;
+    }
+
+    .containerMobile:hover .boxMobile {
+        filter: grayscale(100%) opacity(24%);
+    }
+    .boxMobile:hover::after {
+        transform: translateY(0);
+        opacity: 1;
+        transition-delay: 200ms;
+    }
+    .containerMobile .boxMobile:hover {
+        filter: grayscale(0%) opacity(100%);
+    }
+
+    .containerMobile:has(.box-1-mobile:hover) {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .containerMobile:has(.box-2-mobile:hover) {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    /* Baris Kedua */
+    .containerMobile-2 {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+        width: 100vw;
+        height: 400px;
+        transition: all 400ms;
+    }
+    .containerMobile-2:hover .boxMobile {
+        filter: grayscale(100%) opacity(24%);
+    }
+    .containerMobile-2 .boxMobile:hover {
+        filter: grayscale(0%) opacity(100%);
+    }
+
+    .containerMobile-2:has(.box-3-mobile:hover) {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .containerMobile-2:has(.box-4-mobile:hover) {
+        grid-template-columns: 1fr 2fr;
+    }
+    /* Baris Kedua End */
+    /* Baris Ketiga  */
+    .containerMobile-3 {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1em;
+        width: 100vw;
+        height: 400px;
+        transition: all 400ms;
+    }
+    .containerMobile-3:hover .boxMobile {
+        filter: grayscale(100%) opacity(24%);
+    }
+    .containerMobile-3 .boxMobile:hover {
+        filter: grayscale(0%) opacity(100%);
+    }
+
+    .containerMobile-3:has(.box-5-mobile:hover) {
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+
+    .containerMobile-3:has(.box-6-mobile:hover) {
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+    .containerMobile-3:has(.box-7-mobile:hover) {
+        grid-template-columns: 1fr 1fr 2fr;
+    }
+    /* Baris Ketiga End */
+    /* OurTeam Mobile End */
+
+
+    /* Contact Us */
+    #contactUs {
+        /* background-color: grey; */
+        width: 100vw;
+        height: 100vh;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    .quotes img {
+        width: 150px;
+        left: 20px;
+    }
+
+    .footer-container {
+        width: 100vw;
+        height: 45%;
+        text-align: start;
+        padding: 0;
+    }
+    .footer-blog-wrapper {
+        display: none;
+    }
+
+
+    .footer-img-wrapper {
+        width: 100vw;
+        height: 100px;
+        margin-top: 35px;
+        position: relative;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+    .footer-img {
+        margin-left: 150px;
+    }
+
+    .footer-icon-wrapper {
+        width: 300px;
+        align-items: center;
+        display: flex;
+        margin-top: 10px;
+        margin-left: 60px;
+        position: relative;
+    }
+    .footer-icon {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .copyright-container {
+        width: 100vw;
+        height: 50px;
+        font-size: 12px;
+        gap: 10px;
+        padding: 0 10px 0 1px ;
+        text-align: center;
+    }
+    /* Contact Us End*/
 }
 /* Mobile End */
 
