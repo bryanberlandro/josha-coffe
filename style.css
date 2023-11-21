@@ -1045,7 +1045,7 @@ main {
     left: 680px;
     z-index: -100;
     filter: brightness(-10);
-    transform: rotate(20deg);
+    transform: rotate(15deg);
 }
 .dashed-line-3 {
     position: absolute;
@@ -1435,6 +1435,198 @@ main {
 
 /* Footer End */
 
+
+
+@media (max-width: 1400px) {
+    html{
+        font-size: 90%;
+    }
+    header {
+        padding: 10px 40px;
+    }
+    .header{
+        padding: 10px 80px;
+        box-sizing: border-box;
+    }
+
+    .header.header-active {
+        height: 60px;
+        width: 90%;
+        padding: 10px 20px;
+    }
+
+    .blob-1 {
+        left: 900px;
+        filter: blur(30px);
+        width: 300px;
+    }
+
+    .blob-2 {
+        filter: blur(30px);
+    }
+
+    #home {
+        padding-top: 80px;
+    }
+    .home-section div h1{
+        font-size: 4rem;
+    }
+
+    .home-section {
+        /* background-color: red; */
+        width: 50%;
+    }
+
+    .slider-section {
+        width: 40%;
+        /* background-color: grey; */
+    }
+    .utility{
+        gap: 0;
+    }
+    .utility-wrapper:first-child{
+        padding-right: 20px;
+
+    }
+    .utility-wrapper{
+        padding: 0 20px;
+    }
+
+    .blob-3 {
+        filter: blur(40px);
+        left: 900px;
+        width: 300px;
+    }
+    .blob-4 {
+        filter: blur(30px);
+    }
+
+
+    .about-us-wrapper {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .about-us-desc-1 {
+        width: 90%;
+        height: 90%;
+    }
+    .about-us-desc-2 {
+        width: 90%;
+        height: 90%;
+        margin-left: 125px;
+    }
+
+    .about-us-img-2 img {
+        object-fit: fill;
+        width: 120%;
+    }
+    #product {
+        padding-top: 10px;
+    }
+
+    .featured-menu-wrapper {
+        width: 70%;
+        margin: 0 auto;
+        gap: 30px;
+    }
+    .featured-img-1 {
+        left: -120px;
+    }
+
+    .featured-img-3 {
+        width: 190px;
+        left: -30px;
+        top: -51px;
+    }
+    .featured-card-1 {
+        width: 370px;
+    }
+    .featured-card-2 {
+        width: 370px;
+    }
+    .featured-card-3 {
+        width: 370px;
+    }
+
+    .featured-card-desc-wrapper {
+        width: 80%;
+    }
+
+    /* FindUs */
+    .find-us {
+        margin-top: 30px;
+    }
+
+    .find-us-wrapper {
+        
+    }
+
+    .maps-indo {
+        width: 95%;
+    }
+
+    .maps-card {
+        width: max-content;
+    }
+
+    .maps-card-img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .maps-card-img img {
+        width: 130px;
+    }
+
+    .maps-card-5 {
+        top: -40px;
+        left: 20px;
+    }
+    .maps-card-1 {
+        top: 10px;
+        left: 1px;
+    }
+    .maps-card-2 {
+        top: -20px;
+        left: -40px;
+    }
+    .maps-card-3 {
+        top: -30px;
+    }
+
+    .dashed-line-1 {
+        top: 410px;
+        left: 240px;
+    }
+    .dashed-line-2 {
+        bottom: 20px;
+        left: 420px;
+    }
+    .dashed-line-3 {
+        right: 290px;        
+        bottom: 50px;
+    }
+
+    .dashed-line-4 {
+        bottom: 10px;
+        left: 600px;
+    }
+
+    .glassy-card {
+        transform: translateY(-50px) translateX(700px);
+    }
+    /* FindUs End */
+
+    #ourTeam {
+        margin-top: 200px;
+    }
+    .container{
+        grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+        gap: 0.5em;
+        width: 1250px;
+    }
+    /* Our Team End */
+}
 @media (max-width: 1280px) {
     html{
         font-size: 90%;
@@ -1569,6 +1761,9 @@ main {
     html {
         font-size: 80%;
     }
+    main {
+        width: 100vw;
+    }
     .header {
         width: 100vw;
         justify-content: space-between;
@@ -1643,10 +1838,10 @@ main {
     /* Header End */
 
     .blob-1 {
-       width: 50%; 
+        width: 50%; 
     }
     .blob-2 {
-       width: 50%; 
+        width: 50%; 
     }
 
     #home {
@@ -1702,6 +1897,92 @@ main {
         display: none;
     }
 
+    /* About Us Mobile */
+    #aboutUs {
+        width: 100vw;
+    }
+
+    .about-us-wrapper {
+        
+    }
+
+    .about-us-desc-1 {
+        width: 350px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid black; */
+        /* background-color: yellow; */
+    }
+
+    .about-us-img-1 {
+        width: 100%;
+        /* height: 300px; */
+        /* background-color: green; */
+    }
+    .about-us-img-1 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        top: 0;
+    }
+
+    .about-us-desc-1 div:last-child h1 {
+        margin-top: -20px;
+        font-size: 18px;
+    }
+
+    .about-us-desc-1 div:last-child p {
+        font-size: 11px;
+        /* background-color: red; */
+        width: 300px;
+        height: 90px;
+        margin-left: 150px;
+    }
+
+    /* adawad */
+    .about-us-desc-2 {
+        width: 350px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid black; */
+        /* background-color: yellow; */
+        margin-left: 0;
+    }
+
+    .about-us-img-2 {
+        width: 100%;
+        /* height: 300px; */
+        /* background-color: green; */
+    }
+    .about-us-img-2 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        top: 0;
+    }
+
+    .about-us-desc-2 div:last-child h1 {
+        margin-top: -20px;
+        font-size: 18px;
+    }
+
+    .about-us-desc-2 div:last-child p {
+        font-size: 11px;
+        /* background-color: red; */
+        width: 300px;
+        height: 90px;
+        margin-left: 150px;
+    }
+    /* About Us Mobile End */
+
+    /* Product Mobile */
+    #product {
+        padding-top: 280px;
+    }
+    
+    /* Product Mobile End */
 }
 /* Mobile End */
 
