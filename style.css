@@ -1750,6 +1750,7 @@ main {
 @media (max-width: 480px) {
     html {
         font-size: 80%;
+        overflow-x: hidden;
     }
     main {
         width: 100vw;
@@ -1893,7 +1894,7 @@ main {
     }
 
     .about-us-desc-1 {
-        width: 350px;
+        width: 380px;
         height: 400px;
         display: flex;
         flex-direction: column;
@@ -1928,7 +1929,7 @@ main {
 
     /* adawad */
     .about-us-desc-2 {
-        width: 350px;
+        width: 380px;
         height: 400px;
         display: flex;
         flex-direction: column;
