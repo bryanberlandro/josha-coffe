@@ -1894,7 +1894,7 @@ main {
     }
 
     .about-us-desc-1 {
-        width: 380px;
+        width: 350px;
         height: 400px;
         display: flex;
         flex-direction: column;
@@ -1929,7 +1929,7 @@ main {
 
     /* adawad */
     .about-us-desc-2 {
-        width: 380px;
+        width: 350px;
         height: 400px;
         display: flex;
         flex-direction: column;
