@@ -1660,7 +1660,6 @@ main {
     #home {
         display: flex;
         justify-content: center;
-        padding-top: 140px;        
     }
 
     .home-section {
