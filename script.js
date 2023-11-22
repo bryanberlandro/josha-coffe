@@ -148,11 +148,28 @@ function glassyCardMethod(){
     }, 500)
 }
 
-window.addEventListener('scroll', function(){
-    if(this.window.scrollY > 2000){
-        glassyCardMethod();
+
+document.addEventListener('DOMContentLoaded', init)
+
+function init(){
+    let mediaPhone = window.matchMedia("(max-width: 480px)");
+    if(mediaPhone.matches){
+        window.addEventListener('scroll', function(){
+            if(this.window.scrollY > 2600){
+                glassyCardMethod();
+            }
+        })
+    } else {
+        window.addEventListener('scroll', function(){
+            if(this.window.scrollY > 2000){
+                glassyCardMethod();
+            }
+        })
     }
-})
+}
+
+
+
 // Maps
 
 // Show Up
