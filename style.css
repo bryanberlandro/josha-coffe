@@ -1910,6 +1910,7 @@ main {
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
         color: white;
+        display: block;
     }
     .maps-city-mobile {
         display: flex;
