@@ -1660,11 +1660,10 @@ main {
     #home {
         display: flex;
         justify-content: center;
-        
+        padding-top: 140px;        
     }
 
     .home-section {
-        padding-top: 100px;
         width: 100vw;
         height: 100%;
         text-align: center;
