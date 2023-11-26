@@ -1584,6 +1584,9 @@ main {
 
 /* Mobile */
 @media (max-width: 480px) {
+    *{
+        user-select: none;
+    }
     html {
         font-size: 80%;
         overflow-x: hidden;
@@ -1672,6 +1675,14 @@ main {
         justify-content: center;
         align-items: center;
         border-radius: 10px;
+        transition: 0.7s;
+    }
+    .contact-btn:active{
+        background-color: black;
+        transform: scale(0.9);
+    }
+    .contact-btn:focus a{
+        color: rgb(197, 197, 197);
     }
     .contact-btn a {
         color: white;
@@ -1698,20 +1709,25 @@ main {
        width: 50%; 
        left: 10px;
        top: 300px;
+       opacity: 0.3;
     }
     .blob-2 {
        width: 50%; 
        top: 70px;
        left: 190px;
+       opacity: 0.5;
     }
 
     .blob-3 {
         width: 80%;
         left: 100px;
         top: -140px;
+        opacity: 0.3;
     }
     .blob-4 {
         top: 750px;
+        opacity: 0.3;
+
     }
     .blob-5 {
         display: block;
@@ -1722,6 +1738,8 @@ main {
         display: flex;
         position: absolute;
         z-index: -100;;
+        opacity: 0.5;
+
     }
     .blob-6 {
         display: block;
@@ -1731,7 +1749,9 @@ main {
         filter: blur(30px);
         display: flex;
         position: absolute;
-        z-index: -100;;
+        z-index: -100;
+        opacity: 0.3;
+
     }
 
     #home {
@@ -1925,6 +1945,7 @@ main {
     .featured-card-3 {
         margin-top: 20px;
         width: 310px;
+        background-color: white;
     }
     .featured-img-3{
         width: 40%;
