@@ -2,16 +2,11 @@ const header = document.querySelector(".header");
 const navbar = document.querySelector(".navbar");
 const hamburgerButton = document.querySelector('#menu');
 
-
-
-
 window.addEventListener('scroll', function(){
     header.classList.toggle('header-active', window.scrollY > 0);
 })
-
-
-
 // Header Show Up End
+
 
 // Menu
 hamburgerButton.addEventListener('click', function(){
