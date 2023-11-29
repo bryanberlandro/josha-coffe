@@ -70,6 +70,14 @@ header {
     position: relative;
 }
 
+.href-mobile {
+    display: none;
+}
+.href-desktop{
+    display: block;
+}
+
+
 .navbar-nav a{
     text-decoration: none;
     color: rgb(107, 107, 107);
@@ -84,6 +92,7 @@ header {
 div .icon-mobile{
     display: none;
 }
+
 
 
 .navbar-extra {
@@ -1468,8 +1477,15 @@ main {
     div .icon-mobile{
         display: none;
     }
+    .href-desktop{
+        display: block;
+    }
+
     #home {
         padding-top: 80px;
+    }
+    .href-mobile {
+        display: none;
     }
     .utility{
         gap: 0;
@@ -1595,6 +1611,14 @@ main {
         width: 100vw;
         position: fixed;
     }
+    .href-mobile {
+        display: block;
+    }
+
+    .href-desktop{
+        display: none;
+    }
+
     .header {
         width: 100%;
         /* justify-content: space-between; */
