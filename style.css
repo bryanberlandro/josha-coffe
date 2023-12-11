@@ -2189,15 +2189,20 @@ main {
     }
 
     .menu-list-dropdown{
-        width: 250px;
+        width: 260px;
     }
 
     .menu-dropdown{
-        padding: 5px 2px;
+        padding: 5px 0;
+        height: 80px;
+    }
+
+    .menu-desc-dropdown{
+        width: 100%;
     }
 
     .menu-dropdown h1 {
-        font-size: 16px;
+        font-size: 14px;
     }
     /* Search Features End */
 
@@ -2235,8 +2240,13 @@ main {
         box-sizing: border-box;
     }
 
+    .modal-desc h1{
+        font-size: 18px;
+    }
+
     .modal-desc p{
         margin-top: 5px;
+        font-size: 12px;
         /* padding: 10px 20px; */
     }
 
@@ -2249,6 +2259,15 @@ main {
         width: 100%;
         border-top-right-radius: 40px;
         border-top-left-radius: 40px;
+        background-color: rgb(242, 242, 242);
+    }
+
+    .cart-desc h1 {
+        font-size: 16px;
+    }
+
+    .cart-desc p{
+        font-size: 14px;
     }
 
     .sidebar-cart.active{
@@ -2261,7 +2280,7 @@ main {
 
     .cart-wrapper {
         overflow: scroll;
-        height: 50%;
+        height: 55%;
     }
 
     .cart-wrapper::-webkit-scrollbar{
@@ -2270,12 +2289,17 @@ main {
 
     .cart-product {
         height: 100px;
+        padding: 0;
+    }
+
+    .voucher{
+        background-color: white;
     }
 
     .total-price-box{
-        height: 50%;
+        height: 45%;
         justify-content: center;
-        padding: 5px 15px;
+        padding: 0px 15px;
         box-sizing: border-box;
         z-index: 10;
         background-color: white;
@@ -2285,6 +2309,9 @@ main {
         font-size: 15px;
     }
     
+    .quantity-product{
+        margin-top: 5px;
+    }
     /* cart end */
 
 

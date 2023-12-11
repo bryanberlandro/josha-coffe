@@ -39,6 +39,7 @@ searchIcon.addEventListener('click', function(){
 searchInput.addEventListener('click', ()=> {
     menuListDropDown.classList.add('active');
     bgDark.classList.add('active');
+    sidebarCart.classList.remove('active')
 })
 
 
