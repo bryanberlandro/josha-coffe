@@ -57,15 +57,22 @@
             </nav>
     
             <div class="navbar-extra">
-                <div class="search-wrapper">
-                    <input type="text">
-                    <span class="material-symbols-outlined search-icon">
-                        search
-                    </span>
+                <div class="search-container">
+                    <div class="search-wrapper">
+                        <input type="text" id="search-input" autocomplete="off" onkeyup="search()">
+                        <span class="material-symbols-outlined search-icon">
+                            search
+                        </span>
+                    </div>
+                    <div class="menu-list-dropdown">
+                        <div class="arrow-drop"></div>
+                       
+                    </div>
                 </div>
-                <span class="material-symbols-outlined cart-icon">
-                    shopping_cart
-                </span>
+                <div class="cart-icon-wrapper">
+                    <span class="quantity-cart">0</span>
+                    <i class="fa-solid fa-cart-shopping cart-icon" style="font-size: 17px"></i>
+                </div>
                 <span id="menu" class="material-symbols-outlined menu-icon">
                     menu
                 </span>
@@ -73,6 +80,35 @@
         </div>
     </header>
 <!-- Header End -->
+
+<div class="sidebar-cart">
+    <div class="cart-wrapper">
+        <div class="cart-list">
+           
+        </div>
+    </div>
+    <div class="total-price-box">
+        <div>
+            <h1>Subtotal</h1>
+            <p class="total-price">0</p>
+        </div>
+        <button class="voucher">VOUCHER</button>
+        <button class="checkout"  onclick="checkout()">CHECKOUT</button>
+    </div>
+</div>
+
+<!-- bg dark -->
+<div class="bg-dark"></div>
+<!-- bg dark -->
+
+<!-- Modal Product -->
+<div class="modal-container">
+    <div class="modal-wrapper">
+        
+    </div>
+</div>
+<!-- Modal Product -->
+
 
 <!-- Main -->
 <main>
