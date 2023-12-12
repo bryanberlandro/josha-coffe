@@ -201,7 +201,10 @@ div .icon-mobile{
 
 .menu-dropdown:hover {
     background-color: rgb(244, 244, 244);
+}
 
+.menu-dropdown:focus {
+    background-color: rgb(244, 244, 244);
 }
 
 .bg-dark {
@@ -561,6 +564,10 @@ div .icon-mobile{
     cursor: pointer;
 }
 .modal-btn:hover {
+    transform: scale(.97);
+    background-color: #171717;
+}
+.modal-btn:focus{
     transform: scale(.97);
     background-color: #171717;
 }
