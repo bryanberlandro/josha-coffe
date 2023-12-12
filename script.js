@@ -256,6 +256,10 @@ function checkout(){
     updateCart()
 }
 
+function voucher(){
+    alert('belum ada voucher hehehe')
+}
+
 
 
 

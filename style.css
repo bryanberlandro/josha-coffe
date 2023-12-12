@@ -478,6 +478,7 @@ div .icon-mobile{
     gap: 20px;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .notification.active {
@@ -510,7 +511,7 @@ div .icon-mobile{
     bottom: 0;
     left: 0;
     background-color: green;
-    height: 2px;
+    height: 4px;
 }
 .loading.active {
     animation: loading 4.5s;
@@ -2452,10 +2453,13 @@ main {
 
     /* Notification */
     .notification {
-        bottom: 20px;
-        left: 10px;
+        top: 80px;
+        right: 10px;
         width: 200px;
-
+        transform: translateX(400px);
+    }
+    .notification.active {
+        transform: translateX(0);
     }
 
     .notification h1 {
