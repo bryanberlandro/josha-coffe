@@ -460,6 +460,71 @@ div .icon-mobile{
     transform: scale(0.98);
 }
 
+/* notification */
+.notification {
+    width: 250px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: white;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    transform: translateY(400px);
+    opacity: 0;
+    transition: .7s;
+    z-index: 100;
+    box-shadow: 3px 3px 10px #c5c5c5;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.notification.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.notification div:first-child{
+    border: 2px solid black;
+    width: 30px;
+    height: 30px;
+    padding: 5px 0;
+    text-align: center;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.notification h1 {
+    font-size: 18px;
+}
+
+.notification p {
+    font-size: 14px;
+    color: grey;
+}
+
+.loading {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: green;
+    height: 2px;
+}
+.loading.active {
+    animation: loading 4.5s;
+}
+
+@keyframes loading {
+    0%{
+      width: 0;  
+    }
+    100%{
+        width: 100%;
+    }
+}
+/* notification */
 
  /* Sidebar Cart */
 
@@ -2303,11 +2368,7 @@ main {
         outline: 2px solid grey;
         background-color: black;
     }
-    .modal-btn:focus{
-        transform: scale(0.95);
-        outline: 2px solid grey;
-        background-color: black;
-    }
+    
     /* modal end */
 
     /* cart */
@@ -2382,8 +2443,31 @@ main {
         background-color: black;
         outline-offset: 5px;
     }
+    .quantity-product button:active{
+        transform: scale(0.95);
+        outline: 2px solid grey;
+        background-color: black;
+        outline-offset: 5px;
+    }
 
-    
+    /* Notification */
+    .notification {
+        bottom: 20px;
+        left: 10px;
+        width: 200px;
+
+    }
+
+    .notification h1 {
+        font-size: 14px;
+        gap: 10px;
+    }
+
+    .notification p{
+        font-size: 12px;
+    }
+    /* Notification */
+
     /* cart end */
 
 

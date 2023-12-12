@@ -167,7 +167,7 @@ function modalCard(value, key){
             </div>`
 }
 
-function closeModal(key){
+function closeModal(){
     // modalContainer.style.display = 'none';
     modalContainer.classList.remove('active')
 }
@@ -238,6 +238,23 @@ function changeQuantity(key, quantity){
     updateCart()
 }
 
+function checkout(){
+    const checkoutNotif = document.querySelector('.notification')
+    const loading = document.querySelector('.loading')
+    cartData.forEach((value, key) => {
+        delete cartData[key];
+        setTimeout(()=>{
+            checkoutNotif.classList.add('active')
+            loading.classList.add('active')
+            setTimeout(()=> {
+                checkoutNotif.classList.remove('active')
+                loading.classList.remove('active')
+            }, 5000)
+        }, 500)
+        sidebarCart.classList.remove('active')
+    })
+    updateCart()
+}
 
 
 
