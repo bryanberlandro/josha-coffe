@@ -461,13 +461,20 @@ div .icon-mobile{
     backdrop-filter: blur(10px);
     background-color: rgba(92, 91, 91, 0.427);
     z-index: 10;
-    transition: opacity .5s,
-    display .5s,
-    ;
+    transition: all .5s;
     /* display: flex; */
     justify-content: center;
     align-items: center;
-    display: none;
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal-container.active {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: visible;
 }
 
 
@@ -488,7 +495,7 @@ div .icon-mobile{
 
 .close-modal {
     position: absolute;
-    font-size: 20px;
+    font-size: 30px;
     right: 20px;
     top: 10px;
     cursor: pointer;
@@ -498,6 +505,7 @@ div .icon-mobile{
     width: 300px;
     position: relative;
     overflow: hidden;
+    pointer-events: none;
 }
 .modal-img img {
     position: absolute;
@@ -2207,6 +2215,10 @@ main {
     /* Search Features End */
 
     /* modal */
+    /* .modal-container {
+        display: flex;
+    } */
+    
     .modal-card{
         width: 350px;
         padding: 15px 0;

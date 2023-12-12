@@ -134,7 +134,8 @@ function updateModal(){
     const modalContainer = document.querySelector('.modal-container');
     let modalWrapper = document.querySelector('.modal-wrapper');
     modalWrapper.innerHTML = ""
-    modalContainer.style.display = 'flex'
+    // modalContainer.style.display = 'flex'
+    modalContainer.classList.add('active')
     dataList.forEach((value, key) => {
         if(value != null){
             modalWrapper.innerHTML = modalCard(value, key)
@@ -167,7 +168,8 @@ function modalCard(value, key){
 }
 
 function closeModal(key){
-    modalContainer.style.display = 'none';
+    // modalContainer.style.display = 'none';
+    modalContainer.classList.remove('active')
 }
 
 const cartData = [];
@@ -177,7 +179,8 @@ function addCart(key){
         cartData[key] = JSON.parse(JSON.stringify(productData[key]));
         cartData[key].quantity = 1
     }
-    modalContainer.style.display = 'none'
+    // modalContainer.style.display = 'none'
+    modalContainer.classList.remove('active')
     updateCart()
     delete dataList[key]
     sidebarCart.classList.add('active')
@@ -235,12 +238,8 @@ function changeQuantity(key, quantity){
     updateCart()
 }
 
-function checkout(key, quantity){
-    if(quantity >= 1){
-        delete cartData[key]      
-    }
-   updateCart()
-}
+
+
 
 
 
