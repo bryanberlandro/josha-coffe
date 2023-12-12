@@ -206,6 +206,7 @@ div .icon-mobile{
 
 .menu-dropdown:focus {
     background-color: rgb(244, 244, 244);
+    transform: scale(0.95);
 }
 
 .bg-dark {
@@ -381,10 +382,18 @@ div .icon-mobile{
     font-weight: bold;
     padding: 4px 10px;
     cursor: pointer;
-    background-color: #171717;
+    background-color: #393838;
     color: white;
+    transition: 0.7s;
     border-radius: 10px;
 
+}
+
+.quantity-product button:focus{
+    transform: scale(0.95);
+    outline: 2px solid grey;
+    background-color: black;
+    outline-offset: 5px;
 }
 
 .total-price-box{
@@ -2231,36 +2240,43 @@ main {
     } */
     
     .modal-card{
-        width: 350px;
-        padding: 15px 0;
+        width: 300px;
         height: 400px;
+        padding: 0  ;
+        border-radius: 10px;
         display: flex;
         flex-direction: column;
-        overflow: visible;
+        overflow: hidden;
         gap: 0;
     }
 
     .modal-img{
         width: 100%;
-        height: 35%;
+        height: 40%;
+        overflow: hidden;
     }
 
     .modal-img img {
-        top: -50px;
+        top: -30px;
+        width: 100%;
     }
 
     .modal-desc-wrapper{
         display: flex;
-        height: 65%;
+        height: 60%;
         flex-direction: column;
         justify-content: space-between;
-        padding: 10px 20px;
+        padding: 5px 20px 10px 20px;
         box-sizing: border-box;
+        border-radius: 10px;
+        z-index: 10;
+        background-color: rgb(244, 244, 244);
     }
     
     .modal-desc {
         padding-right: 20px;
         box-sizing: border-box;
+        width: 100%;
     }
 
     .modal-desc h1{
@@ -2294,9 +2310,11 @@ main {
         height: 60vh;
         transform: translateY(400px);
         width: 100%;
-        border-top-right-radius: 40px;
-        border-top-left-radius: 40px;
-        background-color: rgb(242, 242, 242);
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        /* background-color: rgb(242, 242, 242); */
+        background: white;
+        box-shadow: 0px -2px 10px #c5c5c586;
     }
 
     .cart-desc h1 {
@@ -2339,7 +2357,9 @@ main {
         padding: 0px 15px;
         box-sizing: border-box;
         z-index: 10;
-        background-color: white;
+        /* background-color: white; */
+        background-color: rgb(242, 242, 242);
+
     }
 
     .total-price-box div {
@@ -2348,7 +2368,10 @@ main {
     
     .quantity-product{
         margin-top: 5px;
+        align-items: center;
     }
+
+    
     /* cart end */
 
 

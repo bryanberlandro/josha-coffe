@@ -62,7 +62,8 @@ const productData = [
         id: 3,
         name: 'Spaghetti Bolognese',
         desc: 'Spaghetti Bolognese is a classic Italian pasta dish celebrated for its rich and flavorful meat sauce, and be spaghetti noodles.',
-        image: 'img/spaghetti bolognese.webp',
+        // image: 'img/spaghetti bolognese.webp',
+        image:'img/bolognese-1.png',
         price: 32000
     }
 ]
