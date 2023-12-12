@@ -2519,8 +2519,10 @@ main {
     .notif-voucher {
         top: 80px;
         left: 10px;
-        width: 200px;
+        width: 220px;
+        gap:10px;
         transform: translateX(-400px);
+
     }
 
     .notif-voucher.active{
