@@ -2271,6 +2271,14 @@ main {
         /* padding: 10px 20px; */
     }
 
+    .modal-btn{
+        transition: .7s;
+    }
+
+    .modal-btn:focus{
+        transform: scale(0.95);
+        outline: 2px solid grey;
+    }
     /* modal end */
 
     /* cart */
