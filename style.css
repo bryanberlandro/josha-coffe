@@ -2371,6 +2371,13 @@ main {
         align-items: center;
     }
 
+    .quantity-product button:focus{
+        transform: scale(0.95);
+        outline: 2px solid grey;
+        background-color: black;
+        outline-offset: 5px;
+    }
+
     
     /* cart end */
 
