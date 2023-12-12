@@ -2211,6 +2211,7 @@ main {
     .menu-dropdown{
         padding: 5px 0;
         height: 80px;
+        user-select: none;
     }
 
     .menu-desc-dropdown{
