@@ -196,6 +196,7 @@ div .icon-mobile{
     /* border-radius: 10px; */
     overflow: hidden;
     cursor: pointer;
+    user-select: none;
     transition: .7s;
 }
 
