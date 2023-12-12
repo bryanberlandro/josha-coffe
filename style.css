@@ -461,6 +461,51 @@ div .icon-mobile{
 }
 
 /* notification */
+.notif-voucher {
+    width: 250px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: white;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    transform: translateY(400px);
+    opacity: 0;
+    transition: .7s;
+    z-index: 100;
+    box-shadow: 3px 3px 10px #c5c5c5;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.notif-voucher.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.notif-voucher h1{
+    font-size: 18px;
+}
+
+.notif-voucher p{
+    font-size: 14px;
+    color: grey;
+}
+
+.voucher-icon {
+    border: 2px solid red;
+    width: 30px;
+    height: 30px;
+    padding: 3px 0;
+    text-align: center;
+    border-radius: 100%;
+    overflow: hidden;
+    color: red;
+}
+
 .notification {
     width: 250px;
     height: 60px;
@@ -487,7 +532,8 @@ div .icon-mobile{
 }
 
 .notification div:first-child{
-    border: 2px solid black;
+    border: 2px solid green;
+    color: green;
     width: 30px;
     height: 30px;
     padding: 5px 0;
@@ -2464,10 +2510,32 @@ main {
 
     .notification h1 {
         font-size: 14px;
-        gap: 10px;
     }
 
     .notification p{
+        font-size: 12px;
+    }
+
+    .notif-voucher {
+        top: 80px;
+        left: 10px;
+        width: 200px;
+        transform: translateX(-400px);
+    }
+
+    .notif-voucher.active{
+        transform: translateX(0);
+    }
+
+    .voucher-icon{
+        padding: 5px 0;
+    }
+
+    .notif-voucher h1 {
+        font-size: 14px;
+    }
+
+    .notif-voucher p{
         font-size: 12px;
     }
     /* Notification */

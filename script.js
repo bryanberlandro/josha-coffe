@@ -257,7 +257,13 @@ function checkout(){
 }
 
 function voucher(){
-    alert('belum ada voucher hehehe')
+    const voucherNotif = document.querySelector('.notif-voucher')
+    setTimeout(()=>{
+        voucherNotif.classList.add('active');
+        setTimeout(()=>{
+            voucherNotif.classList.remove('active');
+        }, 4000)
+    }, 0)
 }
 
 
