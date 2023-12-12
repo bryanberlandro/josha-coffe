@@ -2053,6 +2053,8 @@ main {
 @media (max-width: 480px) {
     *{
         user-select: none;
+        -webkit-tap-highlight-color: transparent !important;
+
     }
     html {
         font-size: 80%;
