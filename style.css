@@ -2275,6 +2275,10 @@ main {
         transition: .7s;
     }
 
+    .modal-btn:hover{
+        background-color: black;
+    }
+
     .modal-btn:focus{
         transform: scale(0.95);
         outline: 2px solid grey;
