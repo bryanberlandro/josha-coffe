@@ -2522,7 +2522,7 @@ main {
         width: 220px;
         gap:10px;
         transform: translateX(-400px);
-
+        
     }
 
     .notif-voucher.active{
